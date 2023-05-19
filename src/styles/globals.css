@@ -3,12 +3,29 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-400 text-black;
+    @apply bg-gradient-to-b from-slate-200 to-slate-300 text-black m-0 p-0 scroll-smooth;
+    box-sizing: border-box;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+.hover-underline-animation-b {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation-b::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #180D4C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-b:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
