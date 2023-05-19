@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "~/styles";
-import { Navbar } from "components";
+import { Hero, Navbar } from "components";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Hero />
       <main className={`${styles.paddings} flex min-h-screen flex-col items-center justify-center`}>
         <div className={`${styles.innerWidth} container flex flex-col items-center justify-center gap-12`}>
           <p className="place-items-start">Hi, my name is Jacob.</p>

@@ -72,14 +72,14 @@ function MobileNav({open, setOpen} : MobileNavProps) {
         return (
             <nav 
                 id="navbar" 
-                className="fixed top-0 lg:h-[75px] md:h-[65px] sm:h-[60px] h-[55px] flex w-full bg-slate-200 border-slate-300 border-b-[1px]"
+                className="fixed top-0 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-200"
             >
-                <div className={`${styles.innerWidth} ${styles.descriptionText} flex mx-auto justify-between`}>
-                <Link className={`flex items-center`} href={'/'}>Jacob Clayton</Link>
+                <div className={`${styles.innerWidth} ${styles.navText} flex mx-auto justify-between`}>
+                <Link className={`flex items-center ${styles.subheaderText}`} href={'/'}>Jacob Clayton</Link>
 
                 <div className='flex items-center'>
                     <div className='md:flex hidden h-full gap-6'>
-                    <ul className={` flex gap-6 items-center cursor-pointer`}>
+                    <ul className={`flex gap-6 items-center cursor-pointer`}>
                         <li className="hover-underline-animation-b duration-500">
                             <Link href="/#About">About</Link>
                         </li>
@@ -93,11 +93,6 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                             <Link href="/#Contact">Contact</Link>
                         </li>
                     </ul>
-                    <div className='h-full w-[1px] bg-slate-300'/>
-                    <div className="flex items-center gap-6">
-                        <a href="mailto:jacob@jacobclayton.dev"><Image src='/email.svg' className='w-[18px] h-[18px] object-contain cursor-pointer' width={20} height={20} alt='twitter'/></a>
-                        <a href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[17px] h-[17px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></a>
-                    </div>
                     </div>
                     
 
