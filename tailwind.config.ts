@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jost: ['var(--font-jost)'],
+      },
       colors: {
         'off-white' : '#fafafa',
         'primary-black': '#18181c',

@@ -1,9 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import styles from "~/styles";
-import { Contact, Hero, Navbar, Projects, Skills } from "components";
+import { Contact, Footer, Hero, Navbar, Projects, Skills } from "components";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +15,7 @@ const Home: NextPage = () => {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </>
   );
 };

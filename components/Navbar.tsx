@@ -2,6 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../src/styles';
+import { Jost } from 'next/font/google';
+
+const jost = Jost({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-jost',
+})
 
 type MobileNavProps = {
     open: boolean;
@@ -22,7 +29,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
     }, [setOpen]);
 
     return (   
-        <div className={`absolute z-50 top-0 right-0 h-screen 2xl:w-[15%] xl:w-[20%] lg:w-[25%] md:w-[35%] sm:w-[40%] w-[55%]  bg-slate-200 rounded-tl rounded-bl border-l-[1px] border-slate-300 transform ${open ? "right-0" : "transform translate-x-full"} transition-transform duration-200 ease-in-out filter `}>
+        <div className={`absolute z-50 top-0 right-0 h-screen 2xl:w-[15%] xl:w-[20%] lg:w-[25%] md:w-[35%] sm:w-[40%] w-[55%]  bg-slate-100 rounded-tl rounded-bl border-l-[1px] border-slate-300 transform ${open ? "right-0" : "transform translate-x-full"} transition-transform duration-200 ease-in-out filter `}>
         <div className={`${styles.descriptionText} ${styles.yPaddings} gap-8 z-100 flex flex-col items-center justify-between mt-[20%] sm:mt-[22%] md:mt-[20%] lg:mt-[30%]`}>
             <Link 
                 className=" cursor-pointer" 
@@ -66,10 +73,10 @@ function MobileNav({open, setOpen} : MobileNavProps) {
         return (
             <nav 
                 id="navbar" 
-                className={`${styles.xPaddings} fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-200`}
+                className={`${styles.xPaddings} fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-100`}
             >
                 <div className={`${styles.innerWidth} ${styles.navText} flex mx-auto justify-between`}>
-                <Link className={`flex items-center ${styles.navText}`} href={'/'}>Jacob Clayton</Link>
+                <Link className={`flex items-center ${styles.nameText} ${jost.variable} font-jost`} href={'/'}>Jacob Clayton</Link>
 
                 <div className='flex items-center'>
                     <div className='md:flex hidden gap-6'>

@@ -5,7 +5,7 @@
 @layer base {
     html {
         scroll-behavior: smooth;
-      /* give titles some breathing room when we scroll to them */
+      /* give titles some breathing room when scrolled to */
         scroll-padding-top: 120px;
     }
     .rough-annotation {
@@ -19,7 +19,7 @@
     padding: 0;
 }
 body {
-    @apply bg-gradient-to-b from-slate-200 to-slate-300 text-primary-black;
+    @apply bg-gradient-to-b from-slate-100 to-slate-200 text-primary-black;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
