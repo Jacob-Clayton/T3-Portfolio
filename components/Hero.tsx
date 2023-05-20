@@ -7,8 +7,8 @@ const Hero = () => {
 
     return (
         <section id="Home" className={`${styles.innerWidth} flex mx-auto text-center`}>
-        <div className={`${styles.yPaddings} mt-[120px] mb-16 flex sm:flex-row flex-col my-auto justify-between sm:gap-0 gap-10`}>      
-        <div className={`sm:w-2/3 w-full flex-col items-center self-center z-20`}>
+        <div className={`${styles.yPaddings} mt-[120px] flex sm:flex-row flex-col my-auto justify-between sm:gap-0 gap-10`}>      
+        <div className={`md:w-2/3 w-full flex-col items-center self-center z-20`}>
             <p className={`${styles.heroHeading} sm:text-left text-center 2xl:px-0 sm:px-6 px-0`}>
                 Hello! I'm Jacob, a developer based in England.
             </p>
@@ -29,43 +29,15 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='w-[320px] h-[1px] block sm:hidden rounded-2xl mx-auto bg-primary-black bg-opacity-20 mb-5 mt-5' />
-        <div className='w-[1px] h-[350px] sm:block hidden rounded-2xl my-auto bg-primary-black bg-opacity-20' />
-
-            <div className='sm:w-1/4 flex sm:flex-row flex-col text-center justify-center'>
-            
-            <div className="flex sm:flex-col flex-row items-center my-auto xl:gap-14 lg:gap-12 md:gap-14 sm:gap-14 gap-6">
-                <div className=''>
-                <p className={`flex flex-col ${styles.descriptionText}`}>
-                    <span className={`font-bold sm:mb-1 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl`}>
-                    10
-                    </span>
-                    Partners
-                </p>
-                </div>
-
-                <div className=''>
-                <p className={`flex flex-col ${styles.descriptionText}`}>
-                    <span className={`sm:mb-1 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl`}>
-                    250
-                        <span className='sm:ml-1 ml-[1px] xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-sm'>
-                        K
-                        </span>
-                    </span>
-                    Community
-                </p>
-                </div>
-
-                <div className=''>
-                <p className={`flex flex-col ${styles.descriptionText}`}>
-                    <span className={`font-britanica sm:mb-1 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl`}>
-                    Global
-                    </span>
-                    Web3 events
-                </p>
-                </div>
-
-            </div>
+            <div className='sm:w-1/4 md:flex hidden my-auto sm:flex-row mx-auto text-center'>
+                <Image
+                    src={'/safaribridgr.png'}
+                    alt="Profile"
+                    priority={true}
+                    className="shadow-lg"
+                    width={400}
+                    height={400}
+                />
             </div>
 
         </div>

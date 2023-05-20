@@ -22,42 +22,36 @@ function MobileNav({open, setOpen} : MobileNavProps) {
     }, [setOpen]);
 
     return (   
-        <div className={`absolute z-50 top-0 right-0 h-screen 2xl:w-[15%] xl:w-[20%] lg:w-[25%] md:w-[35%] sm:w-[40%] w-[55%] bg-slate-200 rounded-tl rounded-bl border-l-[1px] border-slate-300 transform ${open ? "right-0" : "transform translate-x-full"} transition-transform duration-200 ease-in-out filter `}>
-        <div className={`${styles.descriptionText} gap-7 z-100 flex flex-col items-center mt-[20%] sm:mt-[22%] md:mt-[20%] lg:mt-[25%]`}>
+        <div className={`absolute z-50 top-0 right-0 h-screen 2xl:w-[15%] xl:w-[20%] lg:w-[25%] md:w-[35%] sm:w-[40%] w-[55%]  bg-slate-200 rounded-tl rounded-bl border-l-[1px] border-slate-300 transform ${open ? "right-0" : "transform translate-x-full"} transition-transform duration-200 ease-in-out filter `}>
+        <div className={`${styles.descriptionText} ${styles.yPaddings} gap-8 z-100 flex flex-col items-center justify-between mt-[20%] sm:mt-[22%] md:mt-[20%] lg:mt-[30%]`}>
             <Link 
                 className=" cursor-pointer" 
                 href="/" 
                 onClick={() => setOpen(false)}>
-                Home
-            </Link>
-            <a 
-                className={`cursor-pointer`} 
-                href="/#About" 
-                onClick={() => setOpen(false)}>
                 About
-            </a>
-            <a 
-                className="cursor-pointer" 
-                href="/#Team" 
+            </Link>
+            <Link 
+                className={`cursor-pointer`} 
+                href="/#Projects" 
                 onClick={() => setOpen(false)}>
                 Projects
-            </a>
-            <a 
+            </Link>
+            <Link 
                 className="cursor-pointer" 
-                href="/#Services" 
+                href="/#Skills" 
                 onClick={() => setOpen(false)}>
                 Skills
-            </a>
-            <a 
+            </Link>
+            <Link 
                 className="cursor-pointer" 
-                href="https://docs.bridgr.xyz" 
+                href="/#Contact" 
                 onClick={() => setOpen(false)}>
-                <button className='border-slate-500 border py-2 px-5 items-start flex flex-row rounded'>
+                <button className='border-slate-500 border py-2 px-7 items-start flex flex-row rounded'>
                 Contact
                 </button>
-            </a>
-            <div className='w-full h-[1px] rounded-xl bg-slate-300 fixed bottom-[17%]'/>
-            <div className="flex sm:gap-5 gap-4 fixed bottom-[10%] " id='socials'>
+            </Link>
+            <div className='w-full h-[1px] rounded-xl bg-slate-300 fixed bottom-[25%]'/>
+            <div className="flex sm:gap-5 gap-4 fixed bottom-[17%] " id='socials'>
                 <a href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[21px] h-[21px] object-contain cursor-pointer' width={20} height={20} alt='email'/></a>
                 <a href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></a>
             </div>
@@ -72,10 +66,10 @@ function MobileNav({open, setOpen} : MobileNavProps) {
         return (
             <nav 
                 id="navbar" 
-                className="fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-200"
+                className={`${styles.xPaddings} fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-200`}
             >
                 <div className={`${styles.innerWidth} ${styles.navText} flex mx-auto justify-between`}>
-                <Link className={`flex items-center ${styles.subheaderText}`} href={'/'}>Jacob Clayton</Link>
+                <Link className={`flex items-center ${styles.navText}`} href={'/'}>Jacob Clayton</Link>
 
                 <div className='flex items-center'>
                     <div className='md:flex hidden gap-6'>
@@ -98,14 +92,14 @@ function MobileNav({open, setOpen} : MobileNavProps) {
 
                     <MobileNav open={open} setOpen={setOpen} />
                     <div 
-                    className="flex md:hidden group z-50 relative w-6 h-6 cursor-pointer flex-col justify-between" 
+                    className="flex md:hidden group z-50 relative w-5 h-5 cursor-pointer flex-col justify-between" 
                     aria-label="menu"
                     onClick={() => {setOpen(!open)}}
                     >
                     {/* hamburger button */}
-                    <span className={`h-1 w-full bg-primary-black rounded-lg cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-2.5" : ""}`} />
-                    <span className={`h-1 w-full bg-primary-black rounded-lg cursor-pointer transition-all duration-1 ease-in-out ${open ? "w-[0px]" : "w-full"}`} />
-                    <span className={`h-1 w-full bg-primary-black rounded-lg cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-2.5" : ""}`} />
+                    <span className={`h-[2px] w-full bg-primary-black rounded-lg cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-[9px] w-full" : ""}`} />
+                    <span className={`h-[2px] w-full bg-primary-black rounded-lg cursor-pointer transition-all duration-1 ease-in-out ${open ? "hidden" : "w-full"}`} />
+                    <span className={`h-[2px] w-full bg-primary-black rounded-lg cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-[9px] w-full" : ""}`} />
                     </div>
                 </div>
                 
