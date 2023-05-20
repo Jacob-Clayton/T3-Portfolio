@@ -59,7 +59,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
             <div className='w-full h-[1px] rounded-xl bg-slate-300 fixed bottom-[17%]'/>
             <div className="flex sm:gap-5 gap-4 fixed bottom-[10%] " id='socials'>
                 <a href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[21px] h-[21px] object-contain cursor-pointer' width={20} height={20} alt='email'/></a>
-                <a href='https://www.linkedin.com/company/bridgr-xyz' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></a>
+                <a href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></a>
             </div>
         </div>  
         </div>
@@ -72,16 +72,16 @@ function MobileNav({open, setOpen} : MobileNavProps) {
         return (
             <nav 
                 id="navbar" 
-                className="fixed top-0 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-200"
+                className="fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-200"
             >
                 <div className={`${styles.innerWidth} ${styles.navText} flex mx-auto justify-between`}>
                 <Link className={`flex items-center ${styles.subheaderText}`} href={'/'}>Jacob Clayton</Link>
 
                 <div className='flex items-center'>
-                    <div className='md:flex hidden h-full gap-6'>
+                    <div className='md:flex hidden gap-6'>
                     <ul className={`flex gap-6 items-center cursor-pointer`}>
                         <li className="hover-underline-animation-b duration-500">
-                            <Link href="/#About">About</Link>
+                            <Link href="/#Home">About</Link>
                         </li>
                         <li className=" hover-underline-animation-b duration-500">
                             <Link href="/#Projects">Projects</Link>

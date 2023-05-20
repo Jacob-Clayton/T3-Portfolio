@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
 body {
-    @apply bg-gradient-to-b from-slate-200 to-slate-300 text-black m-0 p-0 scroll-smooth;
+    @apply bg-gradient-to-b from-slate-200 to-slate-300 text-primary-black;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .hover-underline-animation-b {
