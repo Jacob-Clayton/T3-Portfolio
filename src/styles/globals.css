@@ -6,7 +6,7 @@
     html {
         scroll-behavior: smooth;
       /* give titles some breathing room when scrolled to */
-        scroll-padding-top: 120px;
+        scroll-padding-top: 80px;
     }
     .rough-annotation {
         z-index: -1;
