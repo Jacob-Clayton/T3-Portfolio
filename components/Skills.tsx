@@ -7,24 +7,23 @@ const Skills = () => {
             <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto`}>
                 <p className={`${styles.headerText}`}>Skills</p>
                 <p className="mt-2">My tech stack:</p>
-                <div className="flex flex-col mt-10 gap-8">
-                    <div className="space-y-2">
+                <div className="flex flex-col sm:mt-10 mt-5 sm:gap-8 gap-5">
+                    <div className="space-y-2 list-disc list-inside">
                         <p className={`${styles.subheaderText}`}>Front End</p>
-                        <p>Javascript / Typescript (React, Next), Tailwind, Sanity CMS, Framer Motion, CSS, HTML.</p>
+                        <li>Javascript / Typescript (React, Next), Tailwind, Sanity CMS, Framer Motion, CSS, HTML.</li>
                     </div>
-                    <div className="space-y-2">
+                    <ul className="space-y-2 list-disc list-inside">
                         <p className={`${styles.subheaderText}`}>Back End</p>
-                        <p>Javascript / Typescript (Node, Express, JSON, APIs).</p>
-                        <p>Python (Pandas, Numpy, Matplotlib, JSON, APIs).</p>
-                        <p>SQL (SQLite, BigQuery, mongoDB, mySQL, Planetscale).</p>
-                        <p>Cloud (GCloud, AWS).</p>
-                        <p>Git</p>
-                    </div>
-                    <div className="space-y-2">
+                        <li>Javascript / Typescript (Node, Express, JSON, APIs).</li>
+                        <li>Python (Pandas, Numpy, Matplotlib, JSON, APIs).</li>
+                        <li>SQL (SQLite, BigQuery, mongoDB, mySQL, Planetscale).</li>
+                        <li>Cloud (GCloud, AWS).</li>
+                        <li>Git</li>
+                    </ul>
+                    <div className="space-y-2 list-disc list-inside">
                         <p className={`${styles.subheaderText}`}>Visualisation</p>
-                        <p>Tableau, Power BI, Dune Analytics and Python.</p>
+                        <li>Tableau, Power BI, Dune Analytics and Python.</li>
                     </div>
-
                 </div>
             </div>
         </section>

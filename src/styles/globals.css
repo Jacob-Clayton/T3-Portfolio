@@ -5,11 +5,8 @@
 @layer base {
     html {
         scroll-behavior: smooth;
-      /* give titles some breathing room when scrolled to */
+        /* give titles some breathing room when scrolled to */
         scroll-padding-top: 80px;
-    }
-    .rough-annotation {
-        z-index: -1;
     }
 }
 
@@ -18,10 +15,15 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     @apply bg-gradient-to-b from-slate-100 to-slate-200 text-primary-black;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+.rough-annotation {
+    z-index: -1;
 }
 
 .hover-underline-animation-b {

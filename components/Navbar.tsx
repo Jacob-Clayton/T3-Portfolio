@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../src/styles';
+import { RoughNotation } from 'react-rough-notation';
 import { Jost } from 'next/font/google';
 
 const jost = Jost({
@@ -70,13 +71,37 @@ function MobileNav({open, setOpen} : MobileNavProps) {
     const Navbar = () => {
         const [open, setOpen] = useState(false);
 
+        const [isHovered, setIsHovered] = useState(false);
+        
+        const handleMouseEnter = () => {
+            setIsHovered(true);
+        };
+
+        const handleMouseLeave = () => {
+            setIsHovered(false);
+        };
+
         return (
-            <nav 
-                id="navbar" 
-                className={`${styles.xPaddings} fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-100`}
-            >
-                <div className={`${styles.innerWidth} ${styles.navText} flex mx-auto justify-between`}>
-                <Link className={`flex items-center ${styles.nameText} ${jost.variable} font-jost`} href={'/'}>Jacob Clayton</Link>
+            <nav id="navbar" className={`${styles.xPaddings} fixed top-0 z-50 lg:h-[90px] md:h-[85px] sm:h-[80px] h-[70px] flex w-full bg-slate-100`}>
+                <div className={`${styles.innerWidth} ${jost.variable} ${styles.navText} flex mx-auto justify-between`}>
+                
+                <div className='flex items-center'>
+                    <RoughNotation 
+                        type='underline' 
+                        color='orange'
+                        strokeWidth={2}
+                        show={isHovered}
+                    >
+                        <Link 
+                            className={`${styles.nameText} font-jost flex items-center tracking-wider`} 
+                            href={'/'} 
+                            onMouseEnter={handleMouseEnter} 
+                            onMouseLeave={handleMouseLeave} 
+                        >
+                            Jacob Clayton
+                        </Link>
+                    </RoughNotation>
+                </div>
 
                 <div className='flex items-center'>
                     <div className='md:flex hidden gap-6'>
@@ -94,8 +119,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                             <Link href="/#Contact">Contact</Link>
                         </li>
                     </ul>
-                    </div>
-                    
+                    </div>                    
 
                     <MobileNav open={open} setOpen={setOpen} />
                     <div 
