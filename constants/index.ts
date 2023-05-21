@@ -1,9 +1,11 @@
+export const LIGHT_COLORS = ["#f9cbca", "#fad0e5", "#fbe685", "#e8d5fd"]
+
 export const MyProjects = [
     {
         index: '01',
         imgUrl: '/safariportfolio.png',
         title: 'Typescript and Next.js Portfolio',
-        description: `This portfolio website. Built with Typescript, Next.js and Tailwind.`,
+        description: `The portfolio you're currently on. Built with Typescript, Next.js and Tailwind.`,
         demoLink: '/',
         codeLink: 'https://github.com/Jacob-Clayton/T3-Portfolio',
     },
@@ -26,8 +28,8 @@ export const MyProjects = [
     {
         index: '04',
         imgUrl: '/safarioldportfolio.png',
-        title: 'React.js Portfolio',
-        description: `Portfolio website 2023, built with Javascript, React, Framer Motion, CSS, SCSS, HTML, Sanity CMS.`,
+        title: 'React.js Website',
+        description: `My 2022 portfolio, built with Javascript, React, Framer Motion, CSS, SCSS, HTML, Sanity CMS.`,
         demoLink: '/',
         codeLink: 'https://github.com/Jacob-Clayton/Portfolio',
     },
