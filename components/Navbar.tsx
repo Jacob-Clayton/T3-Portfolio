@@ -106,16 +106,16 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                 <div className='flex items-center'>
                     <ul className={`md:flex hidden gap-8 items-center cursor-pointer`}>
                         <li className="hover-underline-animation-b duration-500">
-                            <Link href="/#About">About</Link>
+                            <a href="/#About">About</a>
                         </li>
                         <li className=" hover-underline-animation-b duration-500">
-                            <Link href="/#Projects">Projects</Link>
+                            <a href="/#Projects">Projects</a>
                         </li>
                         <li className=" hover-underline-animation-b duration-500">
-                            <Link href="/#Skills">Skills</Link>
+                            <a href="/#Skills">Skills</a>
                         </li>
                         <li className=" hover-underline-animation-b duration-500">
-                            <Link href="/#Contact">Contact</Link>
+                            <a href="/#Contact">Contact</a>
                         </li>
                     </ul>
 

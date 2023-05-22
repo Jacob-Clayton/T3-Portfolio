@@ -8,24 +8,20 @@
         /* give titles some breathing room when scrolled to */
         scroll-padding-top: 80px;
     }
-}
 
-* {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-}
-
-body {
+    body {
     @apply bg-gradient-to-b from-slate-100 to-slate-200 text-primary-black;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    }
 }
-
+/* Highlight sometimes bleeds onto neighbouring word and covers it, z-1 stops that */
 .rough-annotation {
     z-index: -1;
 }
 
+/* Left to right underline animation when hover on text */
 .hover-underline-animation-b {
     display: inline-block;
     position: relative;
