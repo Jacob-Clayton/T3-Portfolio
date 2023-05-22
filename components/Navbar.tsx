@@ -34,7 +34,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
         <div className={`${styles.descriptionText} ${styles.yPaddings} gap-8 z-100 flex flex-col items-center justify-between mt-[20%] sm:mt-[22%] md:mt-[20%] lg:mt-[30%]`}>
             <Link 
                 className=" cursor-pointer" 
-                href="/" 
+                href="/#About" 
                 onClick={() => setOpen(false)}>
                 About
             </Link>
@@ -104,10 +104,9 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                 </div>
 
                 <div className='flex items-center'>
-                    <div className='md:flex hidden gap-6'>
-                    <ul className={`flex gap-6 items-center cursor-pointer`}>
+                    <ul className={`md:flex hidden gap-8 items-center cursor-pointer`}>
                         <li className="hover-underline-animation-b duration-500">
-                            <Link href="/#Home">About</Link>
+                            <Link href="/#About">About</Link>
                         </li>
                         <li className=" hover-underline-animation-b duration-500">
                             <Link href="/#Projects">Projects</Link>
@@ -119,7 +118,6 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                             <Link href="/#Contact">Contact</Link>
                         </li>
                     </ul>
-                    </div>                    
 
                     <MobileNav open={open} setOpen={setOpen} />
                     <div 
