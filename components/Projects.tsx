@@ -17,8 +17,16 @@ const Projects = () => {
                             <p className={`${styles.subheaderText} mt-3`}>{project.title}</p>
                             <p>{project.description}</p>
                             <div className='flex flex-row sm:gap-6 gap-4'>
-                                <Link href={project.demoLink} className='font-normal hover-underline-animation-b'>View Project</Link>
-                                <Link href={project.codeLink} className='font-normal hover-underline-animation-b'>View Code</Link>
+                                {project.demoLink ? (
+                                    <Link href={project.demoLink} className='font-normal hover-underline-animation-b'>
+                                        View Project
+                                    </Link>
+                                ) : null}
+                                {project.codeLink ? (
+                                    <Link href={project.codeLink} className='font-normal hover-underline-animation-b'>
+                                        View Code
+                                    </Link>
+                                ) : null}
                             </div>
                         </div>
                     ))}
