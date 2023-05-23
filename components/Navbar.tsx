@@ -67,7 +67,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
         </div>  
         </div>
     );
-    };
+    }
 
     const Navbar = () => {
         const [open, setOpen] = useState(false);

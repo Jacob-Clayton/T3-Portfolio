@@ -1,19 +1,7 @@
-import React, { useState } from 'react'
 import Link from 'next/link';
 import styles from '../src/styles';
-import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Projects = () => {
-
-    const [isHovered, setIsHovered] = useState(false);
-        
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
 
     return (
         <section id='Contact' className={`${styles.paddings}`}>
