@@ -6,7 +6,7 @@ export const MyProjects = [
         imgUrl: '/safariportfolio.png',
         title: 'Typescript and Next.js Portfolio',
         description: `The portfolio you're currently on. Built with Typescript, Next.js and Tailwind.`,
-        demoLink: '/',
+        demoLink: '',
         codeLink: 'https://github.com/Jacob-Clayton/T3-Portfolio',
     },
     {
