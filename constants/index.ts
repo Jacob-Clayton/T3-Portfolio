@@ -4,8 +4,8 @@ export const MyProjects = [
     {
         index: '01',
         imgUrl: '/safariportfolio.png',
-        title: 'Typescript and Next.js Portfolio',
-        description: `The portfolio you're currently on. Built with Typescript, Next.js and Tailwind.`,
+        title: 'Typescript and Next Portfolio',
+        description: `A simple yet effective website with text highlighting animations to show a little personality. Built with Typescript, Next.js and Tailwind.`,
         demoLink: '',
         codeLink: 'https://github.com/Jacob-Clayton/T3-Portfolio',
     },
@@ -13,7 +13,7 @@ export const MyProjects = [
         index: '02',
         imgUrl: '/safaribridgr.png',
         title: 'Full Stack Website',
-        description: `Full Stack Next.js website with integrated APIs. Built with Javascript, Next, React, Node, Express, Tailwind and HTML.`,
+        description: `Full Stack Next.js website with integrated APIs and automated back end processes. Built with Javascript, Next, Node, Express and Tailwind.`,
         demoLink: 'https://bridgr.xyz',
         codeLink: 'https://github.com/Jacob-Clayton/BRIDGR-Website',
     },
@@ -27,14 +27,6 @@ export const MyProjects = [
     },
     {
         index: '04',
-        imgUrl: '/safarioldportfolio.png',
-        title: 'React.js Website',
-        description: `My 2022 portfolio, built with Javascript, React, Framer Motion, CSS, SCSS, HTML, Sanity CMS.`,
-        demoLink: 'https://2022.jacobclayton.dev/',
-        codeLink: 'https://github.com/Jacob-Clayton/2022-Portfolio',
-    },
-    {
-        index: '05',
         imgUrl: '/safaridex.png',
         title: 'Trading Dashboard',
         description: `Decentralised exchange trading volume dashboard, built using SQL and blockchain data on Dune Analytics.`,
@@ -42,7 +34,7 @@ export const MyProjects = [
         codeLink: 'https://dune.com/queries/1967725/3250902',
     },
     {
-        index: '06',
+        index: '05',
         imgUrl: '/safaridiscord.png',
         title: 'Chat Bot',
         description: `Discord mental health chat bot used by 10,000 people at peak. Built using Python and APIs.`,
