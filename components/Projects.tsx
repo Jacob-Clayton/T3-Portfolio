@@ -13,7 +13,7 @@ const Projects = () => {
                 <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 sm:gap-y-14 gap-y-10 mt-10'>
                     {MyProjects.map((project) => (
                         <div key={project.index} className='flex flex-col sm:gap-3 gap-2'>
-                            <Image src={project.imgUrl} className='shadow' width={500} height={500} alt='project preview image'/>
+                            <Image src={project.imgUrl} className='bottomshadow' width={500} height={300} alt='project preview image'/>
                             <p className={`${styles.subheaderText} mt-3`}>{project.title}</p>
                             <p>{project.description}</p>
                             <div className='flex flex-row sm:gap-6 gap-4'>
