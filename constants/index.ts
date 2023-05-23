@@ -31,7 +31,7 @@ export const MyProjects = [
         title: 'React.js Website',
         description: `My 2022 portfolio, built with Javascript, React, Framer Motion, CSS, SCSS, HTML, Sanity CMS.`,
         demoLink: 'https://2022.jacobclayton.dev/',
-        codeLink: 'https://github.com/Jacob-Clayton/Portfolio',
+        codeLink: 'https://github.com/Jacob-Clayton/2022-Portfolio',
     },
     {
         index: '05',
