@@ -43,7 +43,7 @@ export const MyProjects = [
     },
     {
         index: '06',
-        imgUrl: '/safarieth.png',
+        imgUrl: '/safaridiscord.png',
         title: 'Chat Bot',
         description: `Discord mental health chat bot used by 10,000 people at peak. Built using Python and APIs.`,
         demoLink: '',
