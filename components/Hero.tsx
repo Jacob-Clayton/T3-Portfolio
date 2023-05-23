@@ -45,8 +45,8 @@ const Hero = () => {
                                 </RainbowHighlight>
                             </p>
                             <p>
-                                I'm a self-taught full stack web developer, proficient in Next.js and Node.js.
-                                I work at a top 10 most sold NFT project as a full stack developer, 
+                                I'm a self-taught full stack developer, proficient in Next.js and Node.js.
+                                I work at a top 10 most sold NFT project where my role involves 
                                 building and integrating{" "}
                                 <RainbowHighlight color={colors[3]}> 
                                     back-end APIs
@@ -55,9 +55,9 @@ const Hero = () => {
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI.
                                 </RainbowHighlight>{" "}
-                                Meanwhile I also founded a Web3 company from scratch, independently developing it's 
+                                I have also founded a Web3 company from scratch, independently developing it's 
                                 full stack website with automated processes and APIs.
-                                In my free time I use{" "}
+                                In my free time I like to use{" "}
                                 <RainbowHighlight color={colors[1]}> 
                                     Python 
                                 </RainbowHighlight>{" "}
@@ -89,12 +89,12 @@ const Hero = () => {
                     </RoughNotationGroup>
                     <div className={`flex flex-row justify-center sm:justify-start sm:gap-6 gap-4 sm:mt-8 md:mt-10 mt-6`}>
                         <button className="border border-primary-black py-2 px-7 items-center flex flex-row rounded bg-primary-black ">
-                            <Link className={`text-slate-100 font-light`} href="https://www.linkedin.com/in/jebclayton/">
+                            <Link className={`text-slate-100`} href="https://www.linkedin.com/in/jebclayton/">
                                 View Linkedin
                             </Link>
                         </button>
                         <button className='border border-primary-black py-2 px-7 items-center flex flex-row rounded'>
-                            <Link className={`font-light`} href="https://github.com/Jacob-Clayton">
+                            <Link href="https://github.com/Jacob-Clayton">
                                 View Github
                             </Link>
                         </button>
