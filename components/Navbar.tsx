@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../src/styles';
 import { RoughNotation } from 'react-rough-notation';
+import { LIGHT_COLORS } from '../constants';
 import { Jost } from 'next/font/google';
 
 const jost = Jost({
@@ -87,8 +88,9 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                 
                 <div className='flex items-center'>
                     <RoughNotation 
-                        type='underline' 
-                        color='orange'
+                        type='underline'
+                        // underline color always matches the highlight colour of the word 'developer'
+                        color={LIGHT_COLORS[0]} 
                         strokeWidth={2}
                         show={isHovered}
                     >
