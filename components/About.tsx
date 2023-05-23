@@ -14,7 +14,7 @@ const About = () => {
     // Before animation, detect if custom fonts are loaded, so <RoughNotation /> SVG's are correctly positioned over the elements
     const isFontReady = useIsFontReady()
 
-    const [colors, setColors] = React.useState<string[]>([])
+    const [colors, setColors] = React.useState<(string | undefined)[]>([])
 
     // Shuffle light colors and store them in state so the order is persisted during react re-renders
     React.useEffect(() => {
