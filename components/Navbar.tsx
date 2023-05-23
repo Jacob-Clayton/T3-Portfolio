@@ -61,8 +61,8 @@ function MobileNav({open, setOpen} : MobileNavProps) {
             </Link>
             <div className='w-full h-[1px] rounded-xl bg-slate-300 fixed bottom-[25%]'/>
             <div className="flex sm:gap-5 gap-4 fixed bottom-[17%] " id='socials'>
-                <a href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[21px] h-[21px] object-contain cursor-pointer' width={20} height={20} alt='email'/></a>
-                <a href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></a>
+                <Link href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[21px] h-[21px] object-contain cursor-pointer' width={20} height={20} alt='email'/></Link>
+                <Link href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></Link>
             </div>
         </div>  
         </div>
@@ -108,7 +108,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                 <div className='flex items-center'>
                     <ul className={`md:flex hidden gap-8 items-center cursor-pointer`}>
                         <li className="hover-underline-animation-b duration-500">
-                            <a href="/#About">About</a>
+                            <a href="#About">About</a>
                         </li>
                         <li className=" hover-underline-animation-b duration-500">
                             <a href="/#Projects">Projects</a>
