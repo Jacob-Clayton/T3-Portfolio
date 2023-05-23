@@ -23,7 +23,7 @@ const Hero = () => {
 
     return (
         <section id="About" className={`${styles.paddings} relative`}>
-            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto mt-[120px] flex sm:flex-row flex-col my-auto justify-between sm:gap-2 gap-10`}>      
+            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto mt-[100px] flex sm:flex-row flex-col my-auto justify-between sm:gap-2 gap-10`}>      
                 <div className={`md:w-2/3 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
                         <p className={`${styles.heroHeading} sm:text-left text-center`}>
@@ -45,30 +45,37 @@ const Hero = () => {
                                 </RainbowHighlight>
                             </p>
                             <p>
-                                I am a self-taught developer, starting out in 2020 by building a machine learning algorithm for 
-                                my Undergraduate dissertation - I never looked back. Now I use{" "}
+                                I'm a self-taught full stack web developer, proficient in Next.js and Node.js.
+                                I work at a top 10 most sold NFT project as a full stack developer, 
+                                building and integrating{" "}
                                 <RainbowHighlight color={colors[3]}> 
-                                    Javascript 
+                                    back-end APIs {" "}
+                                </RainbowHighlight>
+                                with the{" "}
+                                <RainbowHighlight color={colors[0]}>
+                                    front-end UI.
                                 </RainbowHighlight>{" "}
-                                professionally and{" "}
-                                <RainbowHighlight color={colors[0]}> 
+                                Meanwhile I also founded a Web3 company from scratch, independently developing it's 
+                                full stack website with automated processes and APIs.
+                                In my free time I use{" "}
+                                <RainbowHighlight color={colors[1]}> 
                                     Python 
                                 </RainbowHighlight>{" "}
-                                for personal projects.
+                                for personal projects too.
                             </p>
                             <p>
                                 Through these experiences I have had the opportunity to work with both small and large, 
                                 specialised and cross-functional teams across different timezones and developed a working 
                                 style that leans towards{" "}
-                                <RainbowHighlight color={colors[1]}>
+                                <RainbowHighlight color={colors[2]}>
                                     flexibility
                                 </RainbowHighlight>{" "}
                                 ,
-                                <RainbowHighlight color={colors[2]}>
+                                <RainbowHighlight color={colors[3]}>
                                     clarity
                                 </RainbowHighlight>{" "}
                                 and{" "}
-                                <RainbowHighlight color={colors[3]}>
+                                <RainbowHighlight color={colors[0]}>
                                     collaboration.
                                 </RainbowHighlight>
                             </p>
