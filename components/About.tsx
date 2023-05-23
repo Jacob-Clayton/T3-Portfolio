@@ -51,11 +51,11 @@ const About = () => {
                                 <RainbowHighlight color={colors[3]}> 
                                     back-end APIs
                                 </RainbowHighlight>{' '}
-                                alongside the{' '}
+                                alongside{' '}
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI.
                                 </RainbowHighlight>{' '}
-                                I have also founded a Web3 company from scratch, independently developing it&apos;s 
+                                I founded a Web3 company from scratch, independently developing it&apos;s 
                                 full stack website with automated processes and APIs.
                                 In my free time I like to use{' '}
                                 <RainbowHighlight color={colors[1]}> 
