@@ -27,19 +27,19 @@ const About = () => {
                 <div className={`lg:w-3/4 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
                         <p className={`${styles.heroHeading} text-left`}>
-                            Hello! I'm Jacob, a{" "}
+                            Hello! I'm Jacob, a{' '}
                             <RainbowHighlight color={colors[0]}>
                                 developer 
-                            </RainbowHighlight>{" "}
+                            </RainbowHighlight>{' '}
                             based in England.
                         </p>
                         <div className={`text-left mt-5 md:mt-6 lg:mt-8 space-y-3`}>
                             <p>
-                                I love building things that are{" "}
+                                I love building things that are{' '}
                                 <RainbowHighlight color={colors[1]}> 
                                     user-friendly, simple 
-                                </RainbowHighlight>{" "}
-                                and{" "}
+                                </RainbowHighlight>{' '}
+                                and{' '}
                                 <RainbowHighlight color={colors[2]}> 
                                     solve problems.
                                 </RainbowHighlight>
@@ -47,40 +47,40 @@ const About = () => {
                             <p>
                                 I'm a self-taught full stack developer, proficient in Next.js and Node.js.
                                 I work at a top 10 most sold NFT project where I 
-                                develop{" "}
+                                develop{' '}
                                 <RainbowHighlight color={colors[3]}> 
                                     back-end APIs
-                                </RainbowHighlight>{" "}
-                                alongside the{" "}
+                                </RainbowHighlight>{' '}
+                                alongside the{' '}
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI.
-                                </RainbowHighlight>{" "}
+                                </RainbowHighlight>{' '}
                                 I have also founded a Web3 company from scratch, independently developing it's 
                                 full stack website with automated processes and APIs.
-                                In my free time I like to use{" "}
+                                In my free time I like to use{' '}
                                 <RainbowHighlight color={colors[1]}> 
                                     Python 
-                                </RainbowHighlight>{" "}
+                                </RainbowHighlight>{' '}
                                 for personal projects too.
                             </p>
                             <p>
                                 Through these experiences I have had the opportunity to work with both small and large, 
                                 specialised and cross-functional teams across different timezones and developed a working 
-                                style that leans towards{" "}
+                                style that leans towards{' '}
                                 <RainbowHighlight color={colors[2]}>
                                     flexibility
-                                </RainbowHighlight>{" "}
+                                </RainbowHighlight>{' '}
                                 ,
                                 <RainbowHighlight color={colors[3]}>
                                     clarity
-                                </RainbowHighlight>{" "}
-                                and{" "}
+                                </RainbowHighlight>{' '}
+                                and{' '}
                                 <RainbowHighlight color={colors[0]}>
                                     collaboration.
                                 </RainbowHighlight>
                             </p>
                             <p>
-                                I'm currently looking for a role as a developer.{" "}
+                                I'm currently looking for a role as a developer.{' '}
                                 <RoughNotation type='circle' color='orange' strokeWidth={2}>
                                     Hire me?
                                 </RoughNotation>

@@ -13,11 +13,11 @@ const Projects = () => {
                         jacob@jacobclayton.dev
                     </Link>
                     . You can also find me on{' '}
-                    <Link href={'https://www.linkedin.com/in/jebclayton/'} className='font-normal text-amber-600'>
+                    <Link href='https://www.linkedin.com/in/jebclayton/' className='font-normal text-amber-600'>
                         Linkedin
                     </Link>{' '}
                     and{' '}
-                    <Link href={'https://github.com/Jacob-Clayton'} className='font-normal text-amber-600'>
+                    <Link href='https://github.com/Jacob-Clayton' className='font-normal text-amber-600'>
                         Github
                     </Link>
                     .
