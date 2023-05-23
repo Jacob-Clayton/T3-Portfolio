@@ -30,7 +30,7 @@ export const MyProjects = [
         imgUrl: '/safarioldportfolio.png',
         title: 'React.js Website',
         description: `My 2022 portfolio, built with Javascript, React, Framer Motion, CSS, SCSS, HTML, Sanity CMS.`,
-        demoLink: '/',
+        demoLink: 'https://2022.jacobclayton.dev/',
         codeLink: 'https://github.com/Jacob-Clayton/Portfolio',
     },
     {
