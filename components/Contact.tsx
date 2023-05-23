@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../src/styles';
 
-const Projects = () => {
+const Contact = () => {
 
     return (
         <section id='Contact' className={`${styles.paddings}`}>
@@ -27,4 +27,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Contact;
