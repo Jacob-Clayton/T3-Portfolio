@@ -46,12 +46,12 @@ const Hero = () => {
                             </p>
                             <p>
                                 I'm a self-taught full stack developer, proficient in Next.js and Node.js.
-                                I work at a top 10 most sold NFT project where my role involves 
-                                building and integrating{" "}
+                                I work at a top 10 most sold NFT project where I 
+                                develop{" "}
                                 <RainbowHighlight color={colors[3]}> 
                                     back-end APIs
                                 </RainbowHighlight>{" "}
-                                with the{" "}
+                                alongside the{" "}
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI.
                                 </RainbowHighlight>{" "}

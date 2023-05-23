@@ -37,7 +37,7 @@ export const MyProjects = [
         index: '05',
         imgUrl: '/safaridex.png',
         title: 'Trading Dashboard',
-        description: `Decentralised exchange trading volume dashboard, built on Dune Analytics using SQL based blockchain data.`,
+        description: `Decentralised exchange trading volume dashboard, built using SQL and blockchain data on Dune Analytics.`,
         demoLink: 'https://dune.com/kolsas/dex-volume',
         codeLink: 'https://dune.com/queries/1967725/3250902',
     },
