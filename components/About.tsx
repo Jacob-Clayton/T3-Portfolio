@@ -9,7 +9,7 @@ import { shuffleArray } from 'lib/shuffleArray';
 import { RainbowHighlight } from '../lib/RainbowHighlight';
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
-const Hero = () => {
+const About = () => {
 
     // Before animation, detect if custom fonts are loaded, so <RoughNotation /> SVG's are correctly positioned over the elements
     const isFontReady = useIsFontReady()
@@ -117,4 +117,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default About;
