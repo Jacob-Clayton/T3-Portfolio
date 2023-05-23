@@ -6,7 +6,7 @@ import macbookImg from '../public/macbookcode.png'
 import { useIsFontReady } from 'lib/useIsFontReady';
 import { LIGHT_COLORS } from '../constants';
 import { shuffleArray } from 'lib/shuffleArray';
-import { RainbowHighlight } from 'lib';
+import { RainbowHighlight } from '../lib/RainbowHighlight';
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 const Hero = () => {
@@ -49,8 +49,8 @@ const Hero = () => {
                                 I work at a top 10 most sold NFT project as a full stack developer, 
                                 building and integrating{" "}
                                 <RainbowHighlight color={colors[3]}> 
-                                    back-end APIs {" "}
-                                </RainbowHighlight>
+                                    back-end APIs
+                                </RainbowHighlight>{" "}
                                 with the{" "}
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI.
