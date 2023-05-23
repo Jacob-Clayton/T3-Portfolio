@@ -23,17 +23,17 @@ const Hero = () => {
 
     return (
         <section id="About" className={`${styles.paddings} relative`}>
-            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto mt-[100px] flex sm:flex-row flex-col my-auto justify-between sm:gap-2 gap-10`}>      
-                <div className={`md:w-2/3 w-full flex-col items-center self-center z-20`}>
+            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto mt-[80px] flex sm:flex-row flex-col my-auto justify-between gap-1`}>      
+                <div className={`lg:w-3/4 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
-                        <p className={`${styles.heroHeading} sm:text-left text-center`}>
+                        <p className={`${styles.heroHeading} text-left`}>
                             Hello! I'm Jacob, a{" "}
                             <RainbowHighlight color={colors[0]}>
                                 developer 
                             </RainbowHighlight>{" "}
                             based in England.
                         </p>
-                        <div className={`sm:w-full sm:text-left text-center sm:mt-6 md:mt-8 mt-5 sm:mx-[0px] mx-auto space-y-3`}>
+                        <div className={`text-left mt-5 md:mt-6 lg:mt-8 space-y-3`}>
                             <p>
                                 I love building things that are{" "}
                                 <RainbowHighlight color={colors[1]}> 
@@ -87,7 +87,7 @@ const Hero = () => {
                             </p>
                         </div>
                     </RoughNotationGroup>
-                    <div className={`flex flex-row justify-center sm:justify-start sm:gap-6 gap-4 sm:mt-8 md:mt-10 mt-6`}>
+                    <div className={`flex flex-row justify-start sm:gap-6 gap-4 sm:mt-8 md:mt-10 mt-6`}>
                         <button className="border border-primary-black py-2 px-7 items-center flex flex-row rounded bg-primary-black ">
                             <Link className={`text-slate-100`} href="https://www.linkedin.com/in/jebclayton/">
                                 View Linkedin
@@ -101,7 +101,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className='md:block hidden my-auto md:w-1/3 lg:w-1/2'>
+                <div className='lg:block hidden my-auto lg:w-[45%]'>
                     <Image
                         src={macbookImg}
                         alt="Profile"
