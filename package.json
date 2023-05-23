@@ -1,13 +1,12 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.2.1",
