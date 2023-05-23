@@ -6,8 +6,12 @@ export function useIsFontReady() {
 
     React.useEffect(() => {
         // https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts
-        document.fonts.ready.then(() => {
-        setIsReady(true)
+        document.fonts.ready
+            .then(() => {
+                setIsReady(true)
+        })
+        .catch((error: Error) => {
+            console.error("Failed to load fonts:", error)
         })
     }, [])
 

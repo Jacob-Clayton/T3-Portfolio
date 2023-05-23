@@ -8,7 +8,7 @@ const Contact = () => {
             <div className={`${styles.innerWidth} mx-auto`}>
                 <p className={`${styles.headerText}`}>Get in touch</p>
                 <p className={`${styles.descriptionText} md:w-3/4 mt-2`}>
-                    Do you have a job opportunity or idea you'd like to discuss? Feel free to reach me at{' '}
+                    Do you have a job opportunity or idea you&apos;d like to discuss? Feel free to reach me at{' '}
                     <Link href={'mailto:jacob@jacobclayton.dev'} className='font-normal text-amber-600'>
                         jacob@jacobclayton.dev
                     </Link>

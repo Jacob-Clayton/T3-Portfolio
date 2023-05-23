@@ -27,7 +27,7 @@ const About = () => {
                 <div className={`lg:w-3/4 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
                         <p className={`${styles.heroHeading} text-left`}>
-                            Hello! I'm Jacob, a{' '}
+                            Hello! I&apos;m Jacob, a{' '}
                             <RainbowHighlight color={colors[0]}>
                                 developer 
                             </RainbowHighlight>{' '}
@@ -45,7 +45,7 @@ const About = () => {
                                 </RainbowHighlight>
                             </p>
                             <p>
-                                I'm a self-taught full stack developer, proficient in Next.js and Node.js.
+                                I&apos;m a self-taught full stack developer, proficient in Next.js and Node.js.
                                 I work at a top 10 most sold NFT project where I 
                                 develop{' '}
                                 <RainbowHighlight color={colors[3]}> 
@@ -55,7 +55,7 @@ const About = () => {
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI.
                                 </RainbowHighlight>{' '}
-                                I have also founded a Web3 company from scratch, independently developing it's 
+                                I have also founded a Web3 company from scratch, independently developing it&apos;s 
                                 full stack website with automated processes and APIs.
                                 In my free time I like to use{' '}
                                 <RainbowHighlight color={colors[1]}> 
@@ -80,7 +80,7 @@ const About = () => {
                                 </RainbowHighlight>
                             </p>
                             <p>
-                                I'm currently looking for a role as a developer.{' '}
+                                I&apos;m currently looking for a role as a developer.{' '}
                                 <RoughNotation type='circle' color='orange' strokeWidth={2}>
                                     Hire me?
                                 </RoughNotation>
