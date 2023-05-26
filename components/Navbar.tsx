@@ -31,8 +31,8 @@ function MobileNav({open, setOpen} : MobileNavProps) {
     }, [setOpen]);
 
     return (   
-        <div className={`absolute z-50 top-0 right-0 h-screen 2xl:w-[15%] xl:w-[20%] lg:w-[25%] md:w-[35%] sm:w-[40%] w-[55%]  bg-slate-100 rounded-tl rounded-bl border-l-[1px] border-slate-300 transform ${open ? "right-0" : "transform translate-x-full"} transition-transform duration-200 ease-in-out filter `}>
-        <div className={`${styles.descriptionText} ${styles.yPaddings} gap-8 z-100 flex flex-col items-center justify-between mt-[20%] sm:mt-[22%] md:mt-[20%] lg:mt-[30%]`}>
+        <div className={`absolute z-50 top-0 right-0 h-screen 2xl:w-[15%] xl:w-[20%] lg:w-[25%] md:w-[35%] sm:w-[40%] w-[55%] bg-slate-100 rounded-tl rounded-bl border-l-[1px] border-slate-300 transform ${open ? "right-0" : "transform translate-x-full"} transition-transform duration-200 ease-in-out filter`}>
+        <div className={`${styles.navText} ${styles.yPaddings} gap-8 z-100 flex flex-col items-center justify-between mt-[20%] sm:mt-[22%] md:mt-[20%] lg:mt-[30%]`}>
             <Link 
                 className=" cursor-pointer" 
                 href="/#About" 
@@ -55,13 +55,11 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                 className="cursor-pointer" 
                 href="/#Contact" 
                 onClick={() => setOpen(false)}>
-                <button className='border-slate-500 border py-2 px-7 items-start flex flex-row rounded'>
                 Contact
-                </button>
             </Link>
             <div className='w-full h-[1px] rounded-xl bg-slate-300 fixed bottom-[25%]'/>
-            <div className="flex sm:gap-5 gap-4 fixed bottom-[17%] " id='socials'>
-                <Link href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[21px] h-[21px] object-contain cursor-pointer' width={20} height={20} alt='email'/></Link>
+            <div className="flex sm:gap-5 gap-4 fixed bottom-[17%] items-top" id='socials'>
+                <Link href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[22px] h-[22px] object-contain cursor-pointer' width={20} height={20} alt='email'/></Link>
                 <Link href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></Link>
             </div>
         </div>  
@@ -128,9 +126,9 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                     onClick={() => {setOpen(!open)}}
                     >
                     {/* hamburger button */}
-                    <span className={`h-[2px] w-full bg-primary-black rounded-lg cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-[9px] w-full" : ""}`} />
-                    <span className={`h-[2px] w-full bg-primary-black rounded-lg cursor-pointer transition-all duration-1 ease-in-out ${open ? "hidden" : "w-full"}`} />
-                    <span className={`h-[2px] w-full bg-primary-black rounded-lg cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-[9px] w-full" : ""}`} />
+                    <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-[9px] w-full" : ""}`} />
+                    <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transition-all duration-1 ease-in-out ${open ? "hidden" : "w-full"}`} />
+                    <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-[9px] w-full" : ""}`} />
                     </div>
                 </div>
                 
