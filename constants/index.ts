@@ -1,3 +1,4 @@
+// Possible colors for the highlighter animation
 export const LIGHT_COLORS = ["#f9cbca", "#fad0e5", "#fbe685", "#e8d5fd"]
 
 export const MyProjects = [

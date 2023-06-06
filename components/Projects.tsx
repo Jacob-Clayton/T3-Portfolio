@@ -16,15 +16,13 @@ const Projects = () => {
                             <Image src={project.imgUrl} className='bottomshadow' width={600} height={400} alt='project preview image'/>
                             <p className={`${styles.subheaderText} mt-3`}>{project.title}</p>
                             <p>{project.description}</p>
-                            {project.stack && (
-                                <div className='flex flex-wrap gap-3'>
-                                    {project.stack.map((tech, index) => (
-                                        <div key={index} className='border border-primary-black rounded px-2 py-[3px]'>
-                                            <p className="sm:leading-[16px] sm:text-[13px] text-xs font-normal text-primary-black">{tech}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
+                            <div className='flex flex-wrap gap-3'>
+                                {project.stack.map((tech, index) => (
+                                    <div key={index} className='border border-primary-black rounded px-2 py-[3px]'>
+                                        <p className="sm:leading-[16px] sm:text-[13px] text-xs font-normal text-primary-black">{tech}</p>
+                                    </div>
+                                ))}
+                            </div>
                             <div className='flex flex-row sm:gap-6 gap-4 mt-1'>
                                 {project.demoLink && (
                                     <Link href={project.demoLink} className='font-normal hover-underline-animation-b'>
