@@ -23,7 +23,7 @@ const About = () => {
 
     return (
         <section id="About" className={`${styles.paddings} relative`}>
-            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto lg:mt-[80px] md:mt-[60px] sm:mt-[40px] mt-[40px] flex sm:flex-row flex-col my-auto justify-between gap-1`}>      
+            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto lg:mt-[70px] md:mt-[50px] sm:mt-[40px] mt-[35px] flex sm:flex-row flex-col my-auto justify-between gap-1`}>      
                 <div className={`lg:w-3/4 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
                         <p className={`${styles.heroHeading} text-left`}>

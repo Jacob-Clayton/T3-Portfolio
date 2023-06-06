@@ -10,7 +10,7 @@ const Projects = () => {
             <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto`}>
                 <p className={`${styles.headerText}`}>Projects</p>
                 <p className={` mt-2`}>Some of the projects I&apos;ve been working on:</p>
-                <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 sm:gap-y-14 gap-y-10 mt-10'>
+                <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 sm:gap-y-12 gap-y-10 mt-10'>
                     {MyProjects.map((project) => (
                         <div key={project.index} className='flex flex-col sm:gap-3 gap-2'>
                             <Image src={project.imgUrl} className='bottomshadow' width={600} height={400} alt='project preview image'/>
@@ -19,13 +19,13 @@ const Projects = () => {
                             {project.stack && (
                                 <div className='flex flex-wrap gap-3'>
                                     {project.stack.map((tech, index) => (
-                                        <div key={index} className='border border-primary-black bg-primary-black rounded px-2 py-[3px]'>
-                                            <p className="text-xs text-slate-100">{tech}</p>
+                                        <div key={index} className='border border-primary-black rounded px-2 py-[3px]'>
+                                            <p className="sm:leading-[16px] sm:text-[13px] text-xs font-normal text-primary-black">{tech}</p>
                                         </div>
                                     ))}
                                 </div>
                             )}
-                            <div className='flex flex-row sm:gap-6 gap-4'>
+                            <div className='flex flex-row sm:gap-6 gap-4 mt-1'>
                                 {project.demoLink && (
                                     <Link href={project.demoLink} className='font-normal hover-underline-animation-b'>
                                         View Project

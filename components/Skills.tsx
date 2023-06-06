@@ -12,8 +12,8 @@ const Skills = () => {
                         <p className={`${styles.subheaderText}`}>Front End</p>
                         <li>Javascript / Typescript (React, Next).</li>
                         <li>Tailwind, SCSS, CSS.</li>
-                        <li>Sanity CMS</li>
-                        <li>HTML</li>
+                        <li>Sanity CMS.</li>
+                        <li>HTML.</li>
                     </div>
                     <ul className="space-y-2 list-disc list-inside">
                         <p className={`${styles.subheaderText}`}>Back End</p>
@@ -21,7 +21,7 @@ const Skills = () => {
                         <li>Python (Pandas, Numpy, Matplotlib, APIs).</li>
                         <li>SQL (SQLite, BigQuery, mongoDB, mySQL).</li>
                         <li>Cloud (AWS, Google Cloud Platform).</li>
-                        <li>Git</li>
+                        <li>Git.</li>
                     </ul>
                     <div className="space-y-2 list-disc list-inside">
                         <p className={`${styles.subheaderText}`}>Visualisation</p>
