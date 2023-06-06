@@ -36,24 +36,28 @@ function MobileNav({open, setOpen} : MobileNavProps) {
             <Link 
                 className=" cursor-pointer" 
                 href="/#About" 
+                scroll={false}
                 onClick={() => setOpen(false)}>
                 About
             </Link>
             <Link 
                 className={`cursor-pointer`} 
                 href="/#Projects" 
+                scroll={false}
                 onClick={() => setOpen(false)}>
                 Projects
             </Link>
             <Link 
                 className="cursor-pointer" 
                 href="/#Skills" 
+                scroll={false}
                 onClick={() => setOpen(false)}>
                 Skills
             </Link>
             <Link 
                 className="cursor-pointer" 
                 href="/#Contact" 
+                scroll={false}
                 onClick={() => setOpen(false)}>
                 Contact
             </Link>

@@ -13,13 +13,13 @@ const Projects = () => {
                 <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 sm:gap-y-12 gap-y-10 mt-10'>
                     {MyProjects.map((project) => (
                         <div key={project.index} className='flex flex-col sm:gap-3 gap-2'>
-                            <Image src={project.imgUrl} className='bottomshadow' width={600} height={400} alt='project preview image'/>
+                            <Image src={project.imgUrl} className='bottomshadow' width={600} height={400} alt='project preview image' priority={true}/>
                             <p className={`${styles.subheaderText} mt-3`}>{project.title}</p>
                             <p>{project.description}</p>
                             <div className='flex flex-wrap gap-3'>
                                 {project.stack.map((tech, index) => (
                                     <div key={index} className='border border-primary-black rounded px-2 py-[3px]'>
-                                        <p className="sm:leading-[16px] sm:text-[13px] text-xs font-normal text-primary-black">{tech}</p>
+                                        <p className="2xl:text-sm sm:leading-[16px] sm:text-[13px] text-xs font-normal text-primary-black">{tech}</p>
                                     </div>
                                 ))}
                             </div>
