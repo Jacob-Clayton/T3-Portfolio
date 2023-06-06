@@ -17,9 +17,9 @@ const Skills = () => {
                     </div>
                     <ul className="space-y-2 list-disc list-inside">
                         <p className={`${styles.subheaderText}`}>Back End</p>
-                        <li>Javascript / Typescript (Node, Express, JSON, APIs).</li>
+                        <li>Javascript / Typescript (Node, Express).</li>
                         <li>Python (Pandas, Numpy, Matplotlib, APIs).</li>
-                        <li>SQL (SQLite, BigQuery, mongoDB, mySQL, Planetscale).</li>
+                        <li>SQL (SQLite, BigQuery, mongoDB, mySQL).</li>
                         <li>Cloud (AWS, Google Cloud Platform).</li>
                         <li>Git</li>
                     </ul>
