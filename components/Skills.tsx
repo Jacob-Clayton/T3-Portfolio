@@ -13,6 +13,7 @@ const Skills = () => {
                         <li>Javascript / Typescript (React, Next).</li>
                         <li>Tailwind, SCSS, CSS.</li>
                         <li>Sanity CMS.</li>
+                        <li>Figma.</li>
                         <li>HTML.</li>
                     </div>
                     <ul className="space-y-2 list-disc list-inside">
