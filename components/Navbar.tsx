@@ -63,7 +63,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
             </Link>
             <div className='w-full h-[1px] rounded-xl bg-slate-300 fixed bottom-[25%]'/>
             <div className="flex sm:gap-5 gap-4 fixed bottom-[17%] items-top" id='socials'>
-                <Link href="mailto:bridgrxyz@gmail.com"><Image src='/email.svg' className='w-[22px] h-[22px] object-contain cursor-pointer' width={20} height={20} alt='email'/></Link>
+                <Link href="mailto:jacob@jacobclayton.dev"><Image src='/email.svg' className='w-[22px] h-[22px] object-contain cursor-pointer' width={20} height={20} alt='email'/></Link>
                 <Link href='https://www.linkedin.com/in/jebclayton/' ><Image src='/linkedin.svg' className='w-[20px] h-[20px] object-contain cursor-pointer' width={20} height={20} alt='linkedin'/></Link>
             </div>
         </div>  
