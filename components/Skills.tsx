@@ -21,7 +21,7 @@ const Skills = () => {
                         <li>Javascript / Typescript (Node, Express).</li>
                         <li>Python (Pandas, Numpy, Matplotlib, APIs).</li>
                         <li>SQL (SQLite, BigQuery, mongoDB, mySQL).</li>
-                        <li>Cloud (AWS, Google Cloud Platform).</li>
+                        <li>Cloud (AWS, GCP).</li>
                         <li>Git.</li>
                     </ul>
                     <div className="space-y-2 list-disc list-inside">
