@@ -25,7 +25,7 @@ export const MyProjects = [
         imgUrl: '/safarieth.png',
         title: 'Blockchain Analytics',
         description: `Analyse any Ethereum wallet in seconds. Get the full balance history and transaction data of anyone's account, plus a list of the most interacted with addresses. Built by analysing blockchain data from multiple Web3 APIs.`,
-        demoLink: 'https://jacob-clayton-etherscan-api-app-sblsnb.streamlit.app/',
+        demoLink: 'https://jacob-clayton-ethereum-analysis-app-x3km17.streamlit.app/',
         codeLink: 'https://github.com/Jacob-Clayton/Ethereum-Analysis',
         stack: ['Python', 'Pandas', 'Numpy', 'Matplotlib', 'APIs']
     },
