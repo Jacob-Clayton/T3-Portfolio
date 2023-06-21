@@ -20,13 +20,15 @@ const Skills = () => {
                         <p className={`${styles.subheaderText}`}>Back End</p>
                         <li>Javascript / Typescript (Node, Express).</li>
                         <li>Python (Pandas, Numpy, Matplotlib, APIs).</li>
-                        <li>SQL (SQLite, BigQuery, mongoDB, mySQL).</li>
+                        <li>SQL (BigQuery, SQLite, mongoDB, mySQL).</li>
                         <li>Cloud (AWS, GCP).</li>
                         <li>Git.</li>
                     </ul>
                     <div className="space-y-2 list-disc list-inside">
-                        <p className={`${styles.subheaderText}`}>Visualisation</p>
-                        <li>Tableau, Power BI, Dune Analytics and Python.</li>
+                        <p className={`${styles.subheaderText}`}>Data Analytics</p>
+                        <li>SQL (BigQuery, SQLite, mySQL).</li>
+                        <li>Python (Pandas, Numpy, Matplotlib).</li>
+                        <li>Tableau and Power BI.</li>
                     </div>
                 </div>
             </div>

@@ -49,16 +49,19 @@ const About = () => {
                                 I work at a top 10 most sold NFT project where I 
                                 develop{' '}
                                 <RainbowHighlight color={colors[3]}> 
-                                    back-end APIs
+                                    back-end APIs,
                                 </RainbowHighlight>{' '}
-                                alongside{' '}
                                 <RainbowHighlight color={colors[0]}>
-                                    front-end UI.
+                                    front-end UI
                                 </RainbowHighlight>{' '}
-                                I founded a Web3 company from scratch, independently developing it&apos;s 
+                                and{' '}
+                                <RainbowHighlight color={colors[1]}>
+                                    SQL dashboards.
+                                </RainbowHighlight>{' '}
+                                I also founded a Web3 company from scratch, independently developing it&apos;s 
                                 full stack website with automated processes and APIs.
-                                In my free time I like to use{' '}
-                                <RainbowHighlight color={colors[1]}> 
+                                And in my free time I like to use{' '}
+                                <RainbowHighlight color={colors[2]}> 
                                     Python 
                                 </RainbowHighlight>{' '}
                                 for personal projects too.
@@ -67,15 +70,15 @@ const About = () => {
                                 Through these experiences I have had the opportunity to work with both small and large, 
                                 specialised and cross-functional teams across different timezones and developed a working 
                                 style that leans towards{' '}
-                                <RainbowHighlight color={colors[2]}>
+                                <RainbowHighlight color={colors[3]}>
                                     flexibility
                                 </RainbowHighlight>{' '}
                                 ,
-                                <RainbowHighlight color={colors[3]}>
+                                <RainbowHighlight color={colors[0]}>
                                     clarity
                                 </RainbowHighlight>{' '}
                                 and{' '}
-                                <RainbowHighlight color={colors[0]}>
+                                <RainbowHighlight color={colors[1]}>
                                     collaboration.
                                 </RainbowHighlight>
                             </p>
