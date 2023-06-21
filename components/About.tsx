@@ -23,16 +23,16 @@ const About = () => {
 
     return (
         <section id="About" className={`${styles.paddings} relative`}>
-            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto lg:mt-[70px] md:mt-[50px] sm:mt-[40px] mt-[35px] flex sm:flex-row flex-col my-auto justify-between gap-1`}>      
+            <div className={`${styles.innerWidth} mx-auto lg:mt-[70px] md:mt-[50px] sm:mt-[40px] mt-[35px] flex sm:flex-row flex-col my-auto justify-between gap-1`}>      
                 <div className={`lg:w-3/4 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
-                        <p className={`${styles.heroHeading} text-left`}>
+                        <h1 className={`text-left`}>
                             Hello! I&apos;m Jacob, a{' '}
                             <RainbowHighlight color={colors[0]}>
                                 developer 
                             </RainbowHighlight>{' '}
                             based in England.
-                        </p>
+                        </h1>
                         <div className={`text-left mt-5 md:mt-6 lg:mt-8 space-y-3`}>
                             <p>
                                 I love building things that are{' '}
@@ -89,13 +89,13 @@ const About = () => {
                     </RoughNotationGroup>
                     <div className={`flex flex-row justify-start sm:gap-6 gap-4 sm:mt-8 md:mt-10 mt-6`}>
                         <button className="border border-primary-black py-2 px-7 items-center flex flex-row rounded bg-primary-black ">
-                            <Link className={`text-slate-100`} href="https://www.linkedin.com/in/jebclayton/">
-                                View Linkedin
+                            <Link href="https://www.linkedin.com/in/jebclayton/">
+                                <p className='text-slate-100'>View Linkedin</p>
                             </Link>
                         </button>
                         <button className='border border-primary-black py-2 px-7 items-center flex flex-row rounded'>
                             <Link href="https://github.com/Jacob-Clayton">
-                                View Github
+                                <p>View Github</p>
                             </Link>
                         </button>
                     </div>

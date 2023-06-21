@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <section id="Skills" className={`${styles.paddings} relative`}>
             <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto`}>
-                <p className={`${styles.headerText}`}>Skills</p>
+                <h2>Skills</h2>
                 <p className="mt-2">My tech stack:</p>
                 <div className="flex flex-col sm:mt-10 mt-5 sm:gap-8 gap-5">
                     <div className="space-y-2 list-disc list-inside">

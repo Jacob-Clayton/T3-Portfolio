@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <section className={`${styles.paddings} relative sm:pb-[60px]`}>
-            <div className={`${styles.innerWidth} ${styles.descriptionText} mx-auto`}>
+            <div className={`${styles.innerWidth} mx-auto`}>
                 <div className="bg-slate-300 w-full h-[1px]" />
                 <p className="mt-6 flex flex-wrap items-center gap-1">
                     Built with 
