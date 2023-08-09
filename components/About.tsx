@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../src/styles';
 import React from 'react';
 import macbookImg from '../public/macbookcode.png'
+import jacobSuit from '../public/jacob_suit.jpg';
 import { useIsFontReady } from 'lib/useIsFontReady';
 import { LIGHT_COLORS } from '../constants';
 import { shuffleArray } from 'lib/shuffleArray';
@@ -23,7 +24,7 @@ const About = () => {
 
     return (
         <section id="About" className={`${styles.paddings} relative`}>
-            <div className={`${styles.innerWidth} mx-auto lg:mt-[70px] md:mt-[50px] sm:mt-[40px] mt-[35px] flex sm:flex-row flex-col my-auto justify-between gap-1`}>      
+            <div className={`${styles.innerWidth} mx-auto lg:mt-[70px] md:mt-[50px] sm:mt-[40px] mt-[35px] flex sm:flex-row flex-col my-auto justify-between gap-8`}>      
                 <div className={`lg:w-3/4 w-full flex-col items-center self-center z-20`}>
                     <RoughNotationGroup show={isFontReady}>
                         <h1 className={`text-left`}>
@@ -46,15 +47,15 @@ const About = () => {
                             </p>
                             <p>
                                 I&apos;m a self-taught full stack developer, proficient in Next.js and Node.js.
-                                I work at a top 10 most sold NFT project where I 
-                                develop{' '}
+                                I have developed{' '}
                                 <RainbowHighlight color={colors[3]}> 
                                     back-end APIs
                                 </RainbowHighlight>{' '}
-                                alongside{' '}
+                                and the{' '}
                                 <RainbowHighlight color={colors[0]}>
-                                    front-end UI.
+                                    front-end UI
                                 </RainbowHighlight>{' '}
+                                for a top 10 most sold NFT project.
                                 I founded a Web3 company from scratch, independently developing it&apos;s 
                                 full stack website with automated processes and APIs.
                                 In my free time I like to use{' '}
@@ -101,14 +102,15 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='lg:block hidden my-auto lg:w-[45%]'>
+                <div className='flex-shrink-0 lg:block hidden my-auto lg:w-[30%] lg:px-6'>
                     <Image
-                        src={macbookImg}
+                        src={jacobSuit}
+                        className='rounded-2xl drop-shadow-xl shadow-blue-900 '
                         alt="Profile"
                         placeholder='blur'
                         priority={true}
-                        width={1000}
-                        height={1000}
+                        width={700}
+                        height={700}
                     />
                 </div>
 
