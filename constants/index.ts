@@ -42,7 +42,7 @@ export const MyProjects = [
         index: '05',
         imgUrl: '/safaridiscord.png',
         title: 'Chat Bot',
-        description: `Mental health chat bot used by 10,000 people to semi-autonomously care for communities. Initially only built to cheer up a friend, it caught on and made everyone smile while interacting with the bot.`,
+        description: `Mental health chat bot serving 10,000 users at peak to semi-autonomously care for communities. Initially only built to cheer up a friend, it caught on and made everyone smile while interacting with the bot.`,
         demoLink: '',
         codeLink: 'https://github.com/Jacob-Clayton/Discord-Bot/blob/main/main.py',
         stack: ['Python', 'APIs', 'JSON']
