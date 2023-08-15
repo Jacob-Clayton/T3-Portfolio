@@ -92,7 +92,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                 <div className='flex items-center'>
                     <RoughNotation 
                         type='underline'
-                        // underline color always matches the highlight colour of the word 'developer'
+                        // My name's underline color always matches the highlight colour of the word 'developer'
                         color={LIGHT_COLORS[0]} 
                         strokeWidth={2}
                         show={isHovered}
@@ -125,16 +125,16 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                     </ul>
 
                     <MobileNav open={open} setOpen={setOpen} />
-                    <div 
-                    className="flex md:hidden group z-50 relative w-5 h-5 cursor-pointer flex-col justify-between" 
-                    aria-label="menu"
-                    onClick={() => {setOpen(!open)}}
+                    <button 
+                        className="flex md:hidden group z-50 relative w-5 h-5 cursor-pointer flex-col justify-between focus:outline-none" 
+                        aria-label="menu"
+                        onClick={() => {setOpen(!open)}}
                     >
-                    {/* hamburger button */}
-                    <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-[9px] w-full" : ""}`} />
-                    <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transition-all duration-1 ease-in-out ${open ? "hidden" : "w-full"}`} />
-                    <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-[9px] w-full" : ""}`} />
-                    </div>
+                        {/* hamburger button */}
+                        <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-[9px] w-full" : ""}`} />
+                        <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transition-all duration-1 ease-in-out ${open ? "hidden" : "w-full"}`} />
+                        <span className={`h-[2px] w-full bg-primary-black rounded cursor-pointer transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-[9px] w-full" : ""}`} />
+                    </button>
                 </div>
                 
             </div>
