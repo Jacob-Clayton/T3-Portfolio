@@ -47,7 +47,7 @@ const About = () => {
                             </p>
                             <p>
                                 I&apos;m a self-taught full stack developer, proficient in Next.js and Node.js.
-                                I have managed the development of{' '}
+                                I have developed{' '}
                                 <RainbowHighlight color={colors[3]}> 
                                     back-end APIs
                                 </RainbowHighlight>{' '}
@@ -55,9 +55,9 @@ const About = () => {
                                 <RainbowHighlight color={colors[0]}>
                                     front-end UI
                                 </RainbowHighlight>{' '}
-                                for a top 10 most sold NFT project.
-                                I founded a company from scratch, leading the development of it&apos;s 
-                                full stack website with automated processes and APIs.
+                                for a $30mil volume web application.
+                                And independently developed a tech startup&apos;s 
+                                full stack website from scratch, including designing the UI and implementing APIs.
                                 In my free time I like to use{' '}
                                 <RainbowHighlight color={colors[1]}> 
                                     Python 
@@ -81,7 +81,7 @@ const About = () => {
                                 </RainbowHighlight>
                             </p>
                             <p>
-                                I&apos;m currently looking for a role as a developer or project manager.{' '}
+                                I&apos;m currently looking for a role as a developer.{' '}
                                 <RoughNotation type='circle' color='orange' strokeWidth={2}>
                                     Hire me?
                                 </RoughNotation>
