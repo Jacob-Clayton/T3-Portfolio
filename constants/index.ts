@@ -6,7 +6,7 @@ export const MyProjects = [
         index: '01',
         imgUrl: '/safariportfolio.png',
         title: 'Portfolio',
-        description: `Simple yet effective site with text highlighting animations to show a little personality. The code is just as pretty too.`,
+        description: `Simple site with text highlighting animations to show a little personality. The code is just as pretty too.`,
         demoLink: '',
         codeLink: 'https://github.com/Jacob-Clayton/T3-Portfolio',
         stack: ['Typescript', 'Next.js', 'Tailwind']
@@ -14,8 +14,8 @@ export const MyProjects = [
     {
         index: '02',
         imgUrl: '/safaribridgr.png',
-        title: 'Full Stack Website',
-        description: `Next.js website with multiple integrated APIs and automated back end processes to sort customer data into a database, send emails automatically and register new customers.`,
+        title: 'Company Website',
+        description: `Full stack Next.js website with multiple integrated APIs and automated back end processes to sort customer data into a database, send emails automatically and register new customers.`,
         demoLink: 'https://bridgr.xyz',
         codeLink: 'https://github.com/Jacob-Clayton/BRIDGR-Website',
         stack: ['Javascript', 'Next.js', 'Node', 'Express', 'Tailwind']

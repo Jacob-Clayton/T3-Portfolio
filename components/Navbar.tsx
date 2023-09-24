@@ -74,11 +74,12 @@ function MobileNav({open, setOpen} : MobileNavProps) {
 
     const Navbar = () => {
         const [open, setOpen] = useState(false);
-
         const [isHovered, setIsHovered] = useState(false);
+        const [underlineColor, setUnderlineColor] = useState(LIGHT_COLORS[0]);
         
         const handleMouseEnter = () => {
             setIsHovered(true);
+            setUnderlineColor(LIGHT_COLORS[0]);
         };
 
         const handleMouseLeave = () => {
@@ -93,7 +94,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                     <RoughNotation 
                         type='underline'
                         // My name's underline color always matches the highlight colour of the word 'developer'
-                        color={LIGHT_COLORS[0]} 
+                        color={underlineColor} 
                         strokeWidth={2}
                         show={isHovered}
                     >

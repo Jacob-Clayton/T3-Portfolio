@@ -62,9 +62,11 @@
     background-color: #180D4C;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    border-radius: 10px;
 }
 
 .hover-underline-animation-b:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+    border-radius: 30px;
 }
