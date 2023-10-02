@@ -95,7 +95,7 @@ function MobileNav({open, setOpen} : MobileNavProps) {
                         type='underline'
                         // My name's underline color always matches the highlight colour of the word 'developer'
                         color={underlineColor} 
-                        strokeWidth={2}
+                        strokeWidth={3}
                         show={isHovered}
                     >
                         <Link 
