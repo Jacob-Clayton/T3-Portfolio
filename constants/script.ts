@@ -21,7 +21,7 @@ function setClock() {
   }
 
   if (dayWindow !== null) {
-      const options = { weekday: 'short' };
+      const options: Intl.DateTimeFormatOptions = { weekday: 'short' };
       const day = currentDate.toLocaleDateString('en-US', options);
       dayWindow.textContent = day;
   }
