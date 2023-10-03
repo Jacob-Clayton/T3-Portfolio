@@ -1,10 +1,12 @@
+import { number } from "zod"
+
 setInterval(setClock, 1000)
 
-const hourHand = document.querySelector('[data-hour-hand]')
-const minuteHand = document.querySelector('[data-minute-hand]')
-const secondHand = document.querySelector('[data-second-hand]')
-const dateWindow = document.querySelector('[data-date-window]')
-const dayWindow = document.querySelector('[data-day-window]')
+const hourHand = document.querySelector<HTMLElement>('[data-hour-hand]')
+const minuteHand = document.querySelector<HTMLElement>('[data-minute-hand]')
+const secondHand = document.querySelector<HTMLElement>('[data-second-hand]')
+const dateWindow = document.querySelector<HTMLElement>('[data-date-window]')
+const dayWindow = document.querySelector<HTMLElement>('[data-day-window]')
 
 function setClock() {
   const currentDate = new Date()
