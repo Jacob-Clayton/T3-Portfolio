@@ -16,7 +16,7 @@ function setClock() {
     setRotation(hourHand, hoursRatio)
 
     if (dateWindow !== null) {
-      const date = currentDate.getDate();
+      const date = currentDate.getDate().toString();
       dateWindow.textContent = date;
   }
 
