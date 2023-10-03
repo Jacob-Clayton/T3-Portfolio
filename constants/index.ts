@@ -47,4 +47,13 @@ export const MyProjects = [
         codeLink: 'https://github.com/Jacob-Clayton/Discord-Bot/blob/main/main.py',
         stack: ['Python', 'APIs', 'JSON']
     },
+    {
+        index: '06',
+        imgUrl: '/clock.png',
+        title: 'CSS Analogue Clock',
+        description: `A purely CSS designed clock with Javascript for the movement.`,
+        demoLink: '/clock',
+        codeLink: '',
+        stack: ['CSS', 'HTML', 'Tailwind', 'Javascript']
+    },
 ];

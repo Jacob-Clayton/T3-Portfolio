@@ -2,6 +2,7 @@ import script from '../../constants/script';
 import { Navbar } from 'components';
 import styles from '~/styles';
 import Link from 'next/link';
+import { MyProjects } from '../../constants';
 
 const Clock = () => {
 
@@ -15,14 +16,14 @@ const Clock = () => {
             <Navbar />
             <div className={`${styles.paddings} relative min-h-screen`}>
                 <div className={`${styles.innerWidth} mx-auto mt-5 sm:mt-10 md:mt-20`}>
-                    <h2 className="text-center">CSS Clock</h2>
-                    <p className={`text-center mt-10 `}>
-                        Clock created using CSS, Tailwind and Javascript
-					</p>
+                    <h2 className="text-center">CSS Analogue Clock</h2>
+                    {/* <p className={`text-center mt-10 `}>
+                        Created using CSS, HTML, Tailwind and Javascript.
+					</p> */}
                     
-                    <div className='flex border-2 border-black mt-5 sm:mt-10 md:mt-20'>
+                    <div className='flex mt-5 sm:mt-10 md:mt-20'>
                         {/* Clock half */}
-                        <div className="clockbody border-2 border-black flex overflow-hidden justify-center items-center">
+                        <div className="clockbody flex overflow-hidden justify-center items-center">
                         {/* Clock face */}
                         <div className="clock w-[500px] h-[500px] bg-gradient-to-b from-slate-200 to-slate-300 border-slate-700 border-[2px] relative rounded-full">          
                         
@@ -125,14 +126,28 @@ const Clock = () => {
                     {/* text half */}
                     <div className='flex flex-col justify-center text-center mx-auto'>
                         <p>words here about the clock and code and a description and whatnot</p>
+                        <div className='flex mt-8'>
+                            {MyProjects
+                                .filter((project) => project.index === '06')
+                                .map((project) => (
+                                    <div key={project.index} className='flex flex-wrap mx-auto gap-2 xl:gap-3'>
+                                        {project.stack.map((tech, index) => (
+                                            <div key={index} className='border border-primary-black rounded px-2 py-[3px]'>
+                                                <p className="2xl:text-sm sm:leading-[16px] sm:text-[13px] text-xs font-normal text-primary-black">{tech}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                            ))}
+                        </div>
+
                         <div className='flex flex-row mx-auto mt-10 gap-10'>
-                            <Link href={''} className='font-normal hover-underline-animation-b'>
+                            <Link href={'https://github.com/Jacob-Clayton/T3-Portfolio/blob/main/src/styles/globals.css'} className='font-normal hover-underline-animation-b'>
                                 <p>View CSS</p>
                             </Link>
-                            <Link href={''} className='font-normal hover-underline-animation-b'>
+                            <Link href={'https://github.com/Jacob-Clayton/T3-Portfolio/blob/main/src/pages/clock.tsx'} className='font-normal hover-underline-animation-b'>
                                 <p>View HTML & Tailwind</p>
                             </Link>
-                            <Link href={''} className='font-normal hover-underline-animation-b'>
+                            <Link href={'https://github.com/Jacob-Clayton/T3-Portfolio/blob/main/constants/script.ts'} className='font-normal hover-underline-animation-b'>
                                 <p>View Javascript</p>
                             </Link>
                         </div>

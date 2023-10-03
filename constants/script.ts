@@ -15,12 +15,16 @@ function setClock() {
     setRotation(minuteHand, minutesRatio)
     setRotation(hourHand, hoursRatio)
 
-    const date = currentDate.getDate();
-    dateWindow.textContent = date;
+    if (dateWindow !== null) {
+      const date = currentDate.getDate();
+      dateWindow.textContent = date;
+  }
 
-    const options = { weekday: 'short' };
-    const day = currentDate.toLocaleDateString('en-US', options);
-    dayWindow.textContent = day;
+  if (dayWindow !== null) {
+      const options = { weekday: 'short' };
+      const day = currentDate.toLocaleDateString('en-US', options);
+      dayWindow.textContent = day;
+  }
 }
 
 function setRotation(element, rotationRatio) {
