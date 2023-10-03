@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../src/styles';
 import React from 'react';
-import macbookImg from '../public/macbookcode.png'
 import jacobSuit from '../public/jacob_suit.jpg';
 import { useIsFontReady } from 'lib/useIsFontReady';
 import { LIGHT_COLORS } from '../constants';
