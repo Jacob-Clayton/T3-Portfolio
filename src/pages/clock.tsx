@@ -1,4 +1,3 @@
-import script from '../../constants/script';
 import { Navbar } from 'components';
 import styles from '~/styles';
 import Link from 'next/link';
@@ -10,7 +9,7 @@ const Clock = () => {
     return (
         <>
         <head>
-            <script defer src={script}></script>
+            <script defer src="../../constants/script.js"></script>
         </head>
         <section className='mx-auto'>
             <Navbar />

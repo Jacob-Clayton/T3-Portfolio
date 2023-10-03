@@ -6,7 +6,7 @@ const secondHand = document.querySelector<HTMLElement>('[data-second-hand]')
 const dateWindow = document.querySelector<HTMLElement>('[data-date-window]')
 const dayWindow = document.querySelector<HTMLElement>('[data-day-window]')
 
-function setClock() {
+export function setClock() {
   const currentDate = new Date()
   const secondsRatio = currentDate.getSeconds() / 60
   const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
@@ -41,7 +41,7 @@ function setClock() {
   }
 }
 
-function setRotation(element: HTMLElement, rotationRatio: number) {
+export function setRotation(element: HTMLElement, rotationRatio: number) {
   element.style.setProperty('--rotation', (rotationRatio * 360).toString())
 }
 
