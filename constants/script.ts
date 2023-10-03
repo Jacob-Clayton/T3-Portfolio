@@ -27,7 +27,7 @@ function setClock() {
   }
 }
 
-function setRotation(element, rotationRatio) {
+function setRotation(element: HTMLElement, rotationRatio: number) {
   element.style.setProperty('--rotation', rotationRatio * 360)
 }
 
