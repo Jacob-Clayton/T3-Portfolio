@@ -1,5 +1,3 @@
-import { number } from "zod"
-
 setInterval(setClock, 1000)
 
 const hourHand = document.querySelector<HTMLElement>('[data-hour-hand]')
@@ -44,7 +42,7 @@ function setClock() {
 }
 
 function setRotation(element: HTMLElement, rotationRatio: number) {
-  element.style.setProperty('--rotation', rotationRatio * 360)
+  element.style.setProperty('--rotation', (rotationRatio * 360).toString())
 }
 
 setClock()
