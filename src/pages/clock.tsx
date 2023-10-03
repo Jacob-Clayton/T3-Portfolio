@@ -2,15 +2,13 @@ import { Navbar } from 'components';
 import styles from '~/styles';
 import Link from 'next/link';
 import { MyProjects } from '../../constants';
+import Script from 'next/script';
 
 const Clock = () => {
 
-
     return (
         <>
-        <head>
-            <script defer src="../../constants/script.js"></script>
-        </head>
+        <Script defer src={'../../components/script.ts'}></Script>
         <section className='mx-auto'>
             <Navbar />
             <div className={`${styles.paddings} relative min-h-screen`}>
