@@ -7,17 +7,31 @@ const dateWindow = document.querySelector('[data-date-window]')
 const dayWindow = document.querySelector('[data-day-window]')
 
 function setClock() {
-    const currentDate = new Date()
-    const secondsRatio = currentDate.getSeconds() / 60
-    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
-    const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
-    setRotation(secondHand, secondsRatio)
-    setRotation(minuteHand, minutesRatio)
-    setRotation(hourHand, hoursRatio)
+  const currentDate = new Date()
+  const secondsRatio = currentDate.getSeconds() / 60
+  const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+  const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
 
-    if (dateWindow !== null) {
+  if (secondHand !== null) {
+    setRotation(secondHand, secondsRatio);
+  }
+
+  if (minuteHand !== null) {
+      setRotation(minuteHand, minutesRatio);
+  }
+
+  if (hourHand !== null) {
+      setRotation(hourHand, hoursRatio);
+  }
+
+  if (dateWindow !== null) {
       const date = currentDate.getDate().toString();
       dateWindow.textContent = date;
+  }
+
+  if (dateWindow !== null) {
+    const date = currentDate.getDate().toString();
+    dateWindow.textContent = date;
   }
 
   if (dayWindow !== null) {
